@@ -25,6 +25,16 @@ namespace AplicacionMVC.Controllers
             return View(await optimacorpContext.ToListAsync());
         }
 
+
+        // GET: Employees listar
+        public async Task<IActionResult> Listar()
+        {
+            var optimacorpContext = _context.Employees.Include(e => e.IdDeparmentFkNavigation);
+            return View(await optimacorpContext.ToListAsync());
+        }
+
+
+
         // GET: Employees/Details/5
         public async Task<IActionResult> Details(int? id)
         {
