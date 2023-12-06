@@ -1,0 +1,23 @@
+instancia name
+instancia id
+
+MSSQLSERVER puerto 1433 predeterminado
+ 
+user: DESKTOP-CI5O3EO\DANIELA(DANIELA) SQL Server administrators have unrestricted access to the Database Engine
+pass: root
+
+Scaffold-DBContext "server=DESKTOP-CI5O3EO; database=OPTIMACORP; integrated security=true; Encrypt=false" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
+
+Scaffold-DBContext "server=DESKTOP-CI5O3EO; database=OPTIMACORP; User Id=sa; Password=root; integrated security=true; TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
+
+
+Scaffold-DBContext "server=DESKTOP-CI5O3EO; database=OPTIMACORP; User Id=sa; Password=root;Encrypt=false" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
+
+CADENA DE CONEXION
+server=DESKTOP-CI5O3EO; database=OPTIMACORP; User Id=sa; Password=root;Encrypt=false
+
+Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;
+
+
+
+DESKTOP-CI5O3EO
